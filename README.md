@@ -3,7 +3,7 @@ An easier way to manage multiple AWS accounts with MFA via CLI
 
 ## Purpose:
 
-If you manage multiple Amazon Web Serivce (AWS) accounts and they leverage MFA for a secondary form of authentication if becomes cumbersome to login.  This script will make the process a bit easier I hope.
+If you manage multiple Amazon Web Serivce (AWS) accounts and they leverage MFA for a secondary form of authentication it becomes cumbersome to login at the CLI.  This script will make the process a bit easier I hope.
 
 ## Requirements:
 
