@@ -29,9 +29,21 @@ aws_access_key_id=access_key_goes_here
 aws_secret_access_key=access_secret_access_key_goes_here
 mfa_serial=arn:aws:iam::012345678901:mfa/username
 
-
 This file should be located in your /Users/username/.aws directory.
 
 ## How to use
 
-This is a bash executable.  .Command files in OS X can be double clicked from the Finder to be run.  If it isn't working then most likely the permissions need to be set to executable.  chmod +x aws-mfa.command
+This is a bash executable.  .Command files in OS X can be double clicked from the Finder to be run.  If it isn't working then most likely the permissions need to be set to executable.  Run the following on aws-mfa.command in a terminal window:  chmod +x aws-mfa.command
+
+Once your permissions are set just double click the file to launch.
+
+If you do not have a credentials file in your .aws directory it will attempt to create one.  This is very rudimentary and doesn't do any error checking.  If you put in bogus data it will accept it and write the credentials file out that way.
+
+If you have already created a "credentials" file then it will attempt to read it and then present you with login options.
+
+Once you have authenticated with MFA it will open a new window that can be used to access the AWS account you authenticated with.
+Only this terminal window is authorized to access the AWS account.  If you close it or want another terminal window .
+
+## NOTE
+
+
