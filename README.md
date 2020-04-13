@@ -11,25 +11,25 @@ This only works on Mac OS currently though it could be adapted easily to work on
 
 An AWS Credentials file formatted like the following:
 
-[AWS Account 1]<br>
-region=us-west-2<br>
-aws_access_key_id=access_key_goes_here<br>
-aws_secret_access_key=access_secret_access_key_goes_here<br>
-mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
+`[AWS Account 1]`<br>
+`region=us-west-2<`br>
+`aws_access_key_id=access_key_goes_here`<br>
+`aws_secret_access_key=access_secret_access_key_goes_here`<br>
+`mfa_serial=arn:aws:iam::012345678901:mfa/username`<br>
 
 
-[AWS Account 2]<br>
-region=us-west-2<br>
-aws_access_key_id=access_key_goes_here<br>
-aws_secret_access_key=access_secret_access_key_goes_here<br>
-mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
+`[AWS Account 2]`<br>
+`region=us-west-2`<br>
+`aws_access_key_id=access_key_goes_here`<br>
+`aws_secret_access_key=access_secret_access_key_goes_here`<br>
+`mfa_serial=arn:aws:iam::012345678901:mfa/username`<br>
 
 
-[AWS Account 3]<br>
-region=us-west-1<br>
-aws_access_key_id=access_key_goes_here<br>
-aws_secret_access_key=access_secret_access_key_goes_here<br>
-mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
+`[AWS Account 3]`<br>
+`region=us-west-1`<br>
+`aws_access_key_id=access_key_goes_here`<br>
+`aws_secret_access_key=access_secret_access_key_goes_here`<br>
+`mfa_serial=arn:aws:iam::012345678901:mfa/username`<br>
 
 
 This file should be located in your /Users/username/.aws directory.
@@ -39,6 +39,7 @@ You also need to create your access key and MFA setup for AWS Cli.  See the Note
 The MFA serial, access keys, etc are all located under your "My Security Credentials"  page in the AWS Management console.  The mfa_serial is under the section labled "Multi-factor authentication".  You need the whole line starting with arn and ending with your username.  Do not include the part in parenthesis.
 
 For Example<br>
+<br>
 `arn:aws:iam::012345678901:mfa/username`
 
 
