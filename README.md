@@ -12,7 +12,7 @@ This only works on Mac OS currently though it could be adapted easily to work on
 An AWS Credentials file formatted like the following:
 
 `[AWS Account 1]`<br>
-`region=us-west-2<`br>
+`region=us-west-2`<br>
 `aws_access_key_id=access_key_goes_here`<br>
 `aws_secret_access_key=access_secret_access_key_goes_here`<br>
 `mfa_serial=arn:aws:iam::012345678901:mfa/username`<br>
