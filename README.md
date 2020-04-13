@@ -36,14 +36,15 @@ This file should be located in your /Users/username/.aws directory.
 
 You also need to create your access key and MFA setup for AWS Cli.  See the Notes Section for more info.<br>
 
-The MFA serial, access keys, etc are all located under your "My Security Credentials"  page in the AWS Management console.  The mfa_serial it under the section labled "Multi-factor authentication".  You need the whole line starting with arn and ending with your username.  Do not include the part in parenthesis.
+The MFA serial, access keys, etc are all located under your "My Security Credentials"  page in the AWS Management console.  The mfa_serial is under the section labled "Multi-factor authentication".  You need the whole line starting with arn and ending with your username.  Do not include the part in parenthesis.
 
-i.e.  arn:aws:iam::012345678901:mfa/username
+For Example<br>
+`arn:aws:iam::012345678901:mfa/username`
 
 
 ## How to use
 
-This is a bash executable.  Dot Command files, they look like filename.command, in OS X can be double clicked from the Finder to be run.  If it isn't working then most likely the permissions need to be set to executable.  Run the following on the aws-mfa.command file in a terminal window:  chmod +x aws-mfa.command
+This is a bash executable.  A Dot Command file, it looks like filename.command in OS X, can be double clicked from the Finder to be run.  If it isn't working then most likely the permissions need to be set to executable.  Run the following on the aws-mfa.command file in a terminal window:  chmod +x aws-mfa.command
 
 Once your permissions are set just double click the file to launch.
 
