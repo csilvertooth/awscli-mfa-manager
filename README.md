@@ -11,23 +11,28 @@ This only works on Mac OS currently though it could be adapted easily to work on
 
 An AWS Credentials file formatted like the following:
 
-[AWS Account 1]
-region=us-west-2
-aws_access_key_id=access_key_goes_here
-aws_secret_access_key=access_secret_access_key_goes_here
-mfa_serial=arn:aws:iam::012345678901:mfa/username
 
-[AWS Account 2]
-region=us-west-2
-aws_access_key_id=access_key_goes_here
-aws_secret_access_key=access_secret_access_key_goes_here
-mfa_serial=arn:aws:iam::012345678901:mfa/username
+[AWS Account 1]<br>
+region=us-west-2<br>
+aws_access_key_id=access_key_goes_here<br>
+aws_secret_access_key=access_secret_access_key_goes_here<br>
+mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
 
-[AWS Account 3]
-region=us-west-1
-aws_access_key_id=access_key_goes_here
-aws_secret_access_key=access_secret_access_key_goes_here
-mfa_serial=arn:aws:iam::012345678901:mfa/username
+
+[AWS Account 2]<br>
+region=us-west-2<br>
+aws_access_key_id=access_key_goes_here<br>
+aws_secret_access_key=access_secret_access_key_goes_here<br>
+mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
+
+
+[AWS Account 3]<br>
+region=us-west-1<br>
+aws_access_key_id=access_key_goes_here<br>
+aws_secret_access_key=access_secret_access_key_goes_here<br>
+mfa_serial=arn:aws:iam::012345678901:mfa/username<br>
+
+
 
 This file should be located in your /Users/username/.aws directory.
 
@@ -42,8 +47,11 @@ If you do not have a credentials file in your .aws directory it will attempt to 
 If you have already created a "credentials" file then it will attempt to read it and then present you with login options.
 
 Once you have authenticated with MFA it will open a new window that can be used to access the AWS account you authenticated with.
-Only this terminal window is authorized to access the AWS account.  If you close it or want another terminal window .
+Only this terminal window is authorized to access the AWS account.  If you close it your sessions will end.
 
 ## NOTE
 
+If you would like to open more sessions with the current authentication you just need to pasted the source text found at the top of the first terminal window opened into a new window.
+
+example "source $HOME/.Ag2th"
 
